@@ -15,7 +15,7 @@ The training data is a collection of cow screen images sampled from some videos.
 </p>
 
 ## Preprocessing
-The images are vectorized using some CNNs like Resnet before input to the LSTM auto-encoder. Here, the output vector of the last full connection layer of Resnet50 is used. So every image is transformed into a 2048 dimension vector firstly.
+The images are vectorized using some CNNs like Resnet before input to the LSTM auto-encoder. Here, the output vector of the last full connection layer of Resnet50 is used. So every image is transformed into a 2048 dimension vector firstly. The Resnet50 is also fine-tuned using the training data.
 
 ## Learning curve
 The auto-encoder is well trained according to the following learning curve.
